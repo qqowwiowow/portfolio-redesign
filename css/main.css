@@ -43,10 +43,12 @@ body {
 }
 .main-logo {
   position: absolute;
-  width: calc(var(--index) * 5);
-  height: calc(var(--index) * 5);
   left: calc(var(--index) * 2);
   top: 0;
+}
+.logo-img {
+  width: calc(var(--index) * 5);
+  height: calc(var(--index) * 5);
 }
 .main-content {
   display: flex;
@@ -79,6 +81,8 @@ body {
 
   font-size: calc(var(--index) * 0.6);
   text-align: center;
+  cursor: url(../img/eyes-emoji.png), auto;
+  transition: var(--transition);
 
   background-color: #000;
   color: #fff;
