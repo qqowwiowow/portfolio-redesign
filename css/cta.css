@@ -92,9 +92,9 @@ body {
 }
 .form {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  width: 35rem;
-  height: 55rem;
+  padding: 0.5rem 2rem;
+  width: calc(var(--index) * 20);
+  height: calc(var(--index) * 31);
   border-radius: 8px;
 }
 .form-title {
@@ -110,6 +110,10 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #d7d2cc;
+}
+.cta-first-row {
+  display: flex;
+  gap: 1rem;
 }
 .field::placeholder,
 .message::placeholder {
