@@ -1,0 +1,43 @@
+/* fonts */
+/* inconsolata-regular - latin */
+@font-face {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../libs/fonts/inconsolata-v31-latin-regular.woff2") format("woff2");
+}
+/* inconsolata-800 - latin */
+@font-face {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""),
+    url("../libs/fonts/inconsolata-v31-latin-800.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --index: calc(1vw + 1vh);
+  --transition: 1.25s cubic-bezier(0.2, 0.6, 0, 1);
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: Inconsolata, sans-serif;
+  border: 1px solid #d7d2cc;
+}
+.main-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  background: #304352;
+  background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+  background: linear-gradient(to right, #d7d2cc, #304352);
+}
