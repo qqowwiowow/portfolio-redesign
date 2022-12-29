@@ -147,7 +147,8 @@ option {
   padding: 1rem 2rem;
   border-radius: 8px;
   border: none;
-  cursor: pointer;
+  cursor: url(../img/envelope-emoji.png), auto;
+  transition: var(--transition);
 }
 /* hover */
 .submit:hover {
