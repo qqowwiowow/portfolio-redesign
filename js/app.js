@@ -9,3 +9,7 @@ document.querySelectorAll(".slider").forEach((n, i) => {
   });
 });
 bindSwipers(slider1, slider2);
+
+$(window).on("load", function () {
+  $(".loader-wrapper").fadeOut("slow");
+});

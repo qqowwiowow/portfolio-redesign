@@ -37,17 +37,9 @@ body {
   display: flex;
   justify-content: space-between;
 
-  background: #304352; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #d7d2cc,
-    #304352
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #d7d2cc,
-    #304352
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #304352;
+  background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+  background: linear-gradient(to right, #d7d2cc, #304352);
 }
 .main-logo {
   position: absolute;
@@ -138,4 +130,32 @@ body {
 }
 .footer-link {
   color: #1a1a1a;
+}
+
+/* Hover states */
+.content-btn:hover {
+  background-color: #1a1a1a;
+  transition: var(--transition);
+}
+
+/* Preloader */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #304352;
+  background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+  background: linear-gradient(to right, #d7d2cc, #304352);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blue-heart,
+.man {
+  width: 30px;
+  height: 30px;
+  margin-bottom: -7px;
 }
