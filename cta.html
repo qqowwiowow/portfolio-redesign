@@ -28,8 +28,172 @@
   </head>
   <body>
     <div class="main-wrapper">
-      <div class="about-me-section">About Me</div>
-      <div class="cta-section">CTA</div>
+      <a href="#" class="main-logo"
+        ><img class="logo-img" src="./img/logo.svg" alt=""
+      /></a>
+      <div class="about-me-section">
+        <img src="./img/butterfly.png" style="width: 20rem; height: 20rem" />
+        <div class="first-row">
+          <h2 class="first-row-title">Who Am I?</h2>
+          <p class="first-row-info">
+            I'm Mirakbar Normatov, you can call me just "Mars". I'm 20 now.
+            <br />
+            Self-taught & independent front-end developer from Uzbekistan.<br />Have
+            expirience in coding, web-builders & ui/ux design. <br />Dedicated
+            in creating conceptual, creative websites.
+          </p>
+        </div>
+        <div class="second-row">
+          <h2 class="second-row-title">Skills:</h2>
+          <ol class="second-row-info">
+            <li class="skill">wordpress</li>
+            <li class="skill">webflow</li>
+            <li class="skill">ui/ux design</li>
+          </ol>
+        </div>
+        <div class="third-row">
+          <h2 class="third-row-title">You can find me in:</h2>
+          <ul class="third-row-info socials">
+            <li class="social-item">
+              <a
+                href="https://t.me/qqowmars"
+                target="_blank"
+                class="social-link"
+                >telegram</a
+              >
+            </li>
+            <li class="social-item">
+              <a
+                href="https://instagram.com/qqowmars"
+                target="_blank"
+                class="social-link"
+                >instagram</a
+              >
+            </li>
+            <li class="social-item">
+              <a
+                href="https://github.com/qqowwiowow"
+                target="_blank"
+                class="social-link"
+                >github</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h6 class="copyright">
+        © Mars N. 2022
+        <a
+          target="_blank"
+          href="https://instagram.com/qqowmars"
+          class="footer-link"
+          >@qqowmars</a
+        >
+      </h6>
+      <div class="cta-section">
+        <form
+          method="post"
+          name="email-form"
+          data-name="Email Form"
+          id="email-form"
+          class="form"
+          aria-label="Email Form"
+        >
+          <div class="cta-title">
+            <img src="./img/prog-emoji.png" style="width: 50px; height: 50px" />
+          </div>
+          <div class="cta-first-row">
+            <div class="form-name">
+              <h3 class="form-title">Name:</h3>
+              <input
+                type="text"
+                class="field name"
+                maxlength="256"
+                name="Name"
+                data-name="Name"
+                placeholder="Bill Gates"
+                id="Name-3"
+                required=""
+              />
+            </div>
+            <div class="form-email">
+              <h3 class="form-title">Email:</h3>
+              <input
+                type="email"
+                class="field email"
+                maxlength="256"
+                name="Email"
+                data-name="Email"
+                placeholder="BillGates@gmail.com"
+                id="Email-3"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="cta-second-row">
+            <div class="form-div">
+              <h3 class="form-title">Inquiry:</h3>
+              <select
+                id="Inquiry-3"
+                name="Inquiry"
+                required=""
+                data-name="Inquiry"
+                class="field"
+              >
+                <option value="wordpress">wordpress dev.</option>
+                <option value="webflow">webflow dev.</option>
+                <option value="design">ui/ux design.</option>
+              </select>
+            </div>
+            <div class="form-div">
+              <h3 class="form-title">Company:</h3>
+              <input
+                type="text"
+                class="field"
+                maxlength="256"
+                name="Company"
+                data-name="Company"
+                placeholder="Microsoft"
+                id="Company-3"
+                required=""
+              />
+            </div>
+            <div class="form-div">
+              <h3 class="form-title">Budget:</h3>
+              <input
+                type="number"
+                min="150"
+                step="50"
+                class="field budget"
+                maxlength="256"
+                name="Budget"
+                data-name="Budget"
+                placeholder="EST Budget USD"
+                id="Budget"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="cta-third-row">
+            <h3 class="form-title">Message:</h3>
+            <textarea
+              placeholder="How Can I Help You? "
+              maxlength="5000"
+              id="Message-2"
+              name="Message-2"
+              data-name="Message 2"
+              required=""
+              class="message"
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Send"
+            data-wait="Sending Your Message"
+            class="filled-btn submit w-button"
+          />
+        </form>
+      </div>
     </div>
     <div class="loader-wrapper">
       <div class="loader">
