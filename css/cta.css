@@ -237,7 +237,9 @@ input[type="number"] {
     padding-left: var(--index);
   }
   .bttrfl-emoji {
-    margin: 0 0 0 15rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
     width: 5rem;
     height: 5rem;
   }
@@ -253,9 +255,24 @@ input[type="number"] {
     width: 2rem;
     height: 2rem;
   }
-  .socials {
-    display: flex;
-    align-items: center;
-    gap: calc(var(--index) * 3.5);
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .first-row {
+    grid-column: span 2;
+  }
+  .skill {
+    padding-block: 0.2rem;
+  }
+  .form-title {
+    font-size: calc(var(--index) * 1);
+  }
+  .field,
+  .message,
+  .submit {
+    font-size: calc(var(--index) * 0.7);
   }
 }
