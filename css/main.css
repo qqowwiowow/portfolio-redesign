@@ -41,6 +41,9 @@ body {
   background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
   background: linear-gradient(to right, #d7d2cc, #304352);
 }
+.bttrfl {
+  position: absolute;
+}
 .main-logo {
   position: absolute;
   left: calc(var(--index) * 2);
@@ -162,4 +165,46 @@ body {
   width: 30px;
   height: 30px;
   margin-bottom: -7px;
+}
+/* media queries */
+@media (max-width: 767.98px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+  .slider2 {
+    transform: rotate(0deg) !important;
+  }
+  .slider__item {
+    width: 20rem;
+    /* height: 20rem; */
+  }
+  .slider1 {
+    display: none;
+  }
+  .main-content {
+    justify-content: flex-start;
+    margin-top: calc(var(--index) * 10);
+  }
+  .content-title {
+    font-size: 3rem;
+  }
+  .content-text {
+    font-size: 1rem;
+    color: #000;
+  }
+  .content-btn {
+    width: 50%;
+    padding-block: 1.2rem;
+    font-size: var(--index);
+  }
+  .bttrfl::after {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-image: url(../img/butterfly.png);
+    background-size: cover;
+    top: 0;
+    right: 0;
+  }
 }
